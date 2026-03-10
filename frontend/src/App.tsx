@@ -14,6 +14,8 @@ import ICOProgress from './components/ICOProgress';
 import ProfileSetup from './components/ProfileSetup';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import StablePaymentWidget from './components/StablePaymentWidget';
+import WalletModule from './components/WalletModule';
 
 export default function App() {
   const { identity, isInitializing } = useInternetIdentity();
@@ -48,6 +50,8 @@ export default function App() {
             <KYCGateway />
             <ICOProgress />
           </div>
+          <StablePaymentWidget />
+          <WalletModule />
           <SupplyBlock />
           <VestingSchedule />
           <AIMechanism />

@@ -114,6 +114,21 @@
     }
 }
 
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .animate-marquee {
     animation: marquee 20s linear infinite;
+}
+
+.animate-slide-up {
+    animation: slide-up 0.5s ease-out;
 }

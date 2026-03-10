@@ -1,6 +1,4 @@
-import typography from '@tailwindcss/typography';
-import containerQueries from '@tailwindcss/container-queries';
-import animate from 'tailwindcss-animate';
+// Removed unused plugins for simpler config
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -101,5 +99,5 @@ export default {
             }
         }
     },
-    plugins: [typography, containerQueries, animate]
+    plugins: []
 };

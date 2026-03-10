@@ -44,7 +44,7 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
               SIGN UP / LOG IN
             </DialogTitle>
             <DialogDescription className="font-mono text-sm text-white opacity-90 mt-2">
-              SECURE YOUR ALLOCATION WITH INTERNET IDENTITY
+              EMAIL-ONLY ACCESS • PRIVY-POWERED AUTH + EMBEDDED WALLET
             </DialogDescription>
           </DialogHeader>
         </div>
@@ -58,7 +58,7 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
               <div>
                 <h3 className="font-black uppercase text-sm mb-1">DECENTRALIZED IDENTITY</h3>
                 <p className="text-xs font-mono opacity-70">
-                  No passwords. No email. Your identity, your control.
+                  Passwordless email verification powered by Privy + Internet Identity.
                 </p>
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
                 AUTHENTICATING...
               </span>
             ) : (
-              'CONNECT WITH INTERNET IDENTITY'
+              'CONTINUE WITH VERIFIED EMAIL'
             )}
           </button>
 

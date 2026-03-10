@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+dist/
+.expo/
+**/.env
+**/.env.local
+**/.env.development
+**/.env.production
+**/.env.test
+**/.env.*
+!**/.env.example
+frontend/node_modules/
+frontend/dist/
+frontend/.expo/

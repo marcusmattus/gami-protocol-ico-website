@@ -6,9 +6,12 @@ export default function Hero() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    if (!icoConfig) return;
-
-    const targetTime = Number(icoConfig.endTime) / 1000000; // Convert nanoseconds to milliseconds
+    // Set countdown to 10 days from now
+    const now = Date.now();
+    const tenDaysFromNow = now + (10 * 24 * 60 * 60 * 1000);
+    
+    // Use backend config if available, otherwise use 10 days from now
+    const targetTime = icoConfig ? Number(icoConfig.endTime) / 1000000 : tenDaysFromNow;
 
     const interval = setInterval(() => {
       const now = Date.now();
@@ -48,7 +51,7 @@ export default function Hero() {
             Universal Identity Layer for a $3.3 Billion Global Gamer Market.
           </p>
 
-          <div className="border-[3px] border-black bg-white p-8 inline-block">
+          <div id="countdown-clock" className="border-[3px] border-black bg-white p-8 inline-block scroll-mt-24">
             <div className="text-sm font-bold uppercase mb-4 tracking-wider">ICO COUNTDOWN</div>
             <div className="grid grid-cols-4 gap-4">
               {[
